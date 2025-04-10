@@ -1,6 +1,11 @@
 import discord
+import os
 from discord.ext import commands
 import bot_database
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 bot_database.init_db()
 
@@ -83,4 +88,4 @@ async def on_command_error(ctx, error):
     else:
         raise error 
 
-bot.run("********************************************************")
+bot.run(TOKEN)
