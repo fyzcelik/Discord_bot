@@ -83,4 +83,4 @@ async def on_command_error(ctx, error):
     else:
         raise error 
 
-bot.run("MTM1OTk0NTEwNTUxMDg5NTcyOQ.GpzXOW.h2s-q9f-mRGEEzw50yZPtuxF-z2s-tcHI-2G4A")
+bot.run("********************************************************")
